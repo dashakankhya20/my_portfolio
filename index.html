@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/9a771cc40c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Akankhya Dash</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="image-container">
+          <img src="./images/akankhya_logo.png" alt="Logo" />
+        </div>
+        <ul id="sidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+
+        <!-- navbar for smaller screens -->
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <!-- main body -->
+      <div class="main_body" id="home">
+        <div class="header_text">
+          <p>Web Developer</p>
+          <h1>Hi, I am <span>Akankhya Dash!</span><br />From India</h1>
+          <div class="social-icons">
+            <a href="https://github.com/dashakankhya20" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/akankhya-dash-06b933293/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61560595426456" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/akankhya0097/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/Dash2Akankhya" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="portfolio_image">
+          <img src="./images/side_image.png" alt="My Photo" />
+        </div>
+      </div>
+
+      <!-- About Me Section -->
+      <div id="about" class="about_me">
+        <div class="about_me_photo">
+          <div class="about_me_photo_container">
+            <img src="./images/Akankhya_Dash.jpeg" alt="My Photo" />
+          </div>
+        </div>
+        <div class="about_me_content">
+          <h1 class="subtitle">About Me</h1>
+          <p style="text-align: justify">
+            I'm an aspiring web developer with a keen interest in creating
+            responsive and user-friendly websites. While I'm still honing my
+            skills, I'm dedicated to learning and growing every day. I'm
+            enthusiastic about exploring new technologies, mastering best
+            practices, and continually improving my craft. I'm committed to my
+            tasks and thrive on challenges, always looking for opportunities to
+            innovate.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+            <!-- <p class="tab-links" onclick="openTab('experience')">Experience</p> -->
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <div class="tab_content_container">
+              <div class="tab-item show">
+                <div class="tab-item-skill">
+                  <span>HTML/CSS</span>
+                  <progress title="90%" value="90" max="100">90%</progress>
+                </div>
+              </div>
+
+              <div class="tab-item show">
+                <div class="tab-item-skill">
+                  <span>JavaScript</span>
+                  <progress title="70%" value="70" max="100">70%</progress>
+                </div>
+              </div>
+
+              <div class="tab-item show">
+                <div class="tab-item-skill">
+                  <span>Python</span>
+                  <progress title="70%" value="70" max="100">70%</progress>
+                </div>
+              </div>
+
+              <div class="tab-item">
+                <div class="tab-item-skill">
+                  <span>MERN Stack</span>
+                  <progress title="70%" value="70" max="100">70%</progress>
+                </div>
+              </div>
+
+              <div class="tab-item">
+                <div class="tab-item-skill">
+                  <span>Redux.js</span>
+                  <progress title="60%" value="60" max="100">60%</progress>
+                </div>
+              </div>
+
+              <div class="tab-item">
+                <div class="tab-item-skill">
+                  <span>Next.js</span>
+                  <progress title="60%" value="60" max="100">60%</progress>
+                </div>
+              </div>
+
+              <div class="tab-item">
+                <div class="tab-item-skill">
+                  <span>Material UI</span>
+                  <progress title="75%" value="75" max="100">75%</progress>
+                </div>
+              </div>
+
+              <div class="tab-item">
+                <div class="tab-item-skill">
+                  <span>Styled Components</span>
+                  <progress title="90%" value="90" max="100">90%</progress>
+                </div>
+              </div>
+
+              <div class="tab-item">
+                <div class="tab-item-skill">
+                  <span>MySQL</span>
+                  <progress title="80%" value="80" max="100">80%</progress>
+                </div>
+              </div>
+
+              <div class="tab-item">
+                <div class="tab-item-skill">
+                  <span>Git/GitHub</span>
+                  <progress title="60%" value="60" max="100">60%</progress>
+                </div>
+              </div>
+            </div>
+            <button class="show-more-btn">Show More</button>
+          </div>
+
+          <!-- tab content : education -->
+          <div class="tab-contents" id="education">
+            <div class="tab-item-edu">
+              <div class="education_card">
+                <h2>Ganpat University</h2>
+                <p><span>August 2020 - May 2024</span></p>
+                <p>Bachelor Of Technology (Computer Engineering)</p>
+              </div>
+            </div>
+            <div class="tab-item-edu">
+              <div class="education_card">
+                <h2>Om Landmark School</h2>
+                <p><span>Jan 16, 2024 - May 4, 2024</span></p>
+                <p>12th CBSE</p>
+              </div>
+            </div>
+            <div class="tab-item-edu">
+              <div class="education_card">
+                <h2>Om Landmark School</h2>
+                <p><span>Jan 16, 2024 - May 4, 2024</span></p>
+                <p>10th CBSE</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- tab content : experience  -->
+          <!-- <div class="tab-contents" id="experience">
+            <div class="tab-item">
+              <h2>
+                Bhaskaracharya Institute for Space Applications and
+                Geoinformatics
+              </h2>
+              <p><span>Jan 16, 2024 - May 4, 2024</span></p>
+              <p>Final Year Project Internship <a>View Demo</a></p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+    <!-- Projects Section -->
+<section class="projects" id="projects">
+  <h1 class="subtitle">Projects</h1>
+  <div class="projects_list">
+    <div class="project_list">
+      <div class="project">
+        <img src="./images/promptify.png" alt="Promptify Homepage" />
+        <div class="project-heading">
+          <h3>Promptify</h3>
+          <p>Create and Discover Prompts!</p>
+          <a href="https://promptify-two.vercel.app/" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="project_list">
+      <div class="project">
+        <img src="./images/SocioVerse_1.png" alt="SocioVerse Homepage" />
+        <div class="project-heading">
+          <h3>SocioVerse</h3>
+          <p>Create posts, connect with people and chat!</p>
+          <a href="https://socioverse-fe.onrender.com" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="project_list">
+      <div class="project">
+        <img src="./images/ChiChat_2.png" alt="ChiChat Homepage" />
+        <div class="project-heading">
+          <h3>ChiChat</h3>
+          <p>Chit chat with your friends!</p>
+          <a href="https://chichat-fe.onrender.com/" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project_list">
+      <div class="project">
+        <img src="./images/youtube_clone.png" alt="Promptify Homepage" />
+        <div class="project-heading">
+          <h3>YouTube Clone</h3>
+          <p>Watch videos!</p>
+          <a href="https://youtube-clone-six-woad.vercel.app/" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn" id="show-more-btn">See More</button>
+</section>
+
+
+      <!--  Contact Me Section-->
+      <section class="contact_me" id="contact">
+        <div class="contact_details">
+          <h1 class="subtitle">Contact Me</h1>
+          <div class="contact_info">
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              &nbsp;&nbsp;dashakankhya92@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;9664837193</p>
+          </div>
+
+          <div class="social-icons">
+            <a href="https://github.com/dashakankhya20" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/akankhya-dash-06b933293/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61560595426456" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/akankhya0097/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/Dash2Akankhya" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <a href="./files/Akankhya Dash.pdf" download class="btn"
+            >Download Resume</a
+          >
+        </div>
+        <div class="sender_details">
+          <form method="post" name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+          <span id="msg-success"></span>
+        </div>
+      </section>
+    </div>
+    <div class="footer">
+      <p>Copyright @ Akankhya Dash <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      var sidemenu = document.getElementById("sidemenu");
+      var success_msg = document.getElementById("msg-success");
+
+      function openTab(tabname) {
+        //removes the classname of active-link and active-tab
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        // adds the focus property to tab-links
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      // for opening the menu
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      // for closing the menu
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+
+      // Script for submitting data to google sheet
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzvjtnIRECP_hDqdhZfQoYVNBbZ-s-2ul2Mpl2LSaE2dKozB__qeGtMGJvwwVJANpOdfg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            success_msg.innerHTML = "Message Sent Successfully!";
+            setTimeout(function () {
+              success_msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+
+      //Script for showing more skills in mobile view
+      document.addEventListener("DOMContentLoaded", function () {
+        const showMoreBtn = document.querySelector(".show-more-btn");
+        const items = document.querySelectorAll(".tab-item");
+
+        showMoreBtn.addEventListener("click", function () {
+          const hiddenItems = document.querySelectorAll(".tab-item:not(.show)");
+          const isShowingAll = hiddenItems.length === 0;
+
+          if (isShowingAll) {
+            items.forEach((item, index) => {
+              if (index >= 4) item.classList.remove("show");
+            });
+            showMoreBtn.textContent = "Show More";
+          } else {
+            hiddenItems.forEach((item) => {
+              item.classList.add("show");
+            });
+            showMoreBtn.textContent = "Show Less";
+          }
+        });
+
+        // Initial setup to show the first four items
+        items.forEach((item, index) => {
+          if (index < 4) item.classList.add("show");
+        });
+      });
+
+      // Script for showing projects 
+      document.addEventListener("DOMContentLoaded", () => {
+  const showMoreBtn = document.getElementById("show-more-btn");
+  const projectLists = document.querySelectorAll(".project_list");
+  
+  // Show the first 3 projects initially
+  projectLists.forEach((project, index) => {
+    if (index < 3) {
+      project.classList.add("visible");
+    }
+  });
+
+  showMoreBtn.addEventListener("click", () => {
+    projectLists.forEach((project, index) => {
+      if (index >= 3) {
+        project.classList.toggle("visible");
+      }
+    });
+
+    // Change button text
+    if (showMoreBtn.innerText === "See More") {
+      showMoreBtn.innerText = "See Less";
+    } else {
+      showMoreBtn.innerText = "See More";
+    }
+  });
+});
+
+    </script>
+  </body>
+</html>
